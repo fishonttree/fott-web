@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        
+        <title>Flexing</title>
+        
+        <link rel="stylesheet" href="flexbox.css">
+    </head>
+
+    <body>
+        <h2 class="title">
+            Flexing!
+        </h2>
+
+        <h3 class="title">
+            Resources (You are so gonna need them...)
+        </h3>
+
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+        target="_blank"
+        rel="noopener noreferrer"> MDN Documentation of justify-content</a>
+
+        <p class="text-container">
+            Flex is a family of sort.
+        </p>
+
+        <h4 class="text-container">
+            You absolutely butchered the nested flexboxes, by the way.
+        </h4>
+
+        <p class="text-container">
+            <div>
+                Flex <i>containers</i> are of display type <i>flex</i>.
+            </div>
+        
+            <div>
+                Items in flex containers are <i>flex items</i>.
+            </div>
+
+            <div>
+                Flexboxes are made to improve on <i>float</i>
+                functionalities and support more 
+                complex webpage structure.
+            </div> 
+
+            <div>
+                Every flex container needs the <b>flex
+                display type declaration</b> for the flex
+                properties to actually take effect...
+            </div>
+
+            <div>
+                The <i>justify-content</i> declaration applies 
+                to the <b>parent container</b> rather than the 
+                element itself. A bit different from how we've
+                been doing it before.
+            </div>
+
+            <div>
+                Some other values for <i>justify-content</i>
+                is <i>center</i>, <i>flex-start</i>,
+                <i>flex-end</i>, <i>space-around</i>,
+                and <i>space-between</i>.
+            </div>
+        </p>
+
+        <img
+        src="images/flex-item-align.png"
+        alt="Other Values of justify-content">
+
+        <p class="text-container">
+            Flexboxes can also go vertically, with 
+            <i>align-items </i>when the container has
+            a height.
+        </p>
+
+        <p class="text-container">
+            <div>
+                Their values can be <i>center</i>, <i>flex-start</i>,
+                <i>flex-end</i>, <i>stretch</i>, <i>baseline</i>.
+            </div>
+
+            <div>
+                We can specify the flex direction with the... you
+                guessed it, the <i>flex-direction</i> property.
+                (It defaults at <i>row</i>, by the way).
+            </div> 
+
+            <div>
+                Now, rotating the flex direction will <b>rotate 
+                the alignment properties</b> as well.
+            </div>
+        </p>
+        <img
+        src="images/flex-alignment.png"
+        alt="Rotating Directions of Alignment Properties">
+
+        <p class="text-container">
+            <div>
+                When flex items' total dimension exceeds the 
+                container's dimension, it will naturally 
+                flow outside. The <i>flex-wrap</i> property 
+                will bump extra items down the next row/column. 
+            </div>
+
+            <div>
+                Now, HTML elements don't have to appear in 
+                their markup order. More flexbox surprises!
+            </div>
+        </p>
+
+        <img 
+        src="images/flex-reverse.png"
+        alt="Reversing Element Order in Flexboxes">
+
+        <p class="text-container">
+            <div class="flex-text">
+                Flexbox only care about immediate children,
+                not what's nested inside. So you gotta flex 
+                inside of the flex to make more flex depth!
+                <div class="subtext">
+                    Ya see, these two elements are vertically
+                    aligned!    
+                </div>
+                <div class="subtext">
+                    Flexing inside of flexing!
+                </div>
+            </div>
+        </p>
+
+        <p class="text-container">
+            <div>
+                Okay, so the <i>flex</i> property is shorthand
+                for <i>flex-grow</i>, <i>flex-strink</i>, and 
+                <i>flex-basis</i>.
+            </div>
+        </p>
+
+        <p class="text-container">
+            <div>
+                The <i>flex-grow</i> property scales the items
+                in the flex container. That is to say, an item 
+                at 2 is twice as big as an item at 1.
+            </div>
+        </p>
+
+        <p class="text-container">
+            <div> 
+                The <i>flex-shirnk</i> property scales the 
+                items down. They default to make the items
+                fit inside the container (shrink if it's too
+                big or expand if it's too small). Scaling at
+                1 makes them shrink evenly, scaling at 0 means 
+                to not shrink.
+            </div>
+        </p>
+
+        <p class="text-container">
+            <div>
+                The <i>flex-basis</i> property sets the 
+                initial size of the item before scaling. 
+                It's default <i>auto</i> (lookup the width) 
+                but has the value 0% in the <i>flex: 1</i> 
+                shorthand. <i>flex: auto</i> actually means 
+                <i>flex: 1 1 auto</i>
+            </div> 
+        </p>
+
+        <p class="text-container">
+            <div>
+                There are some other values to take
+                note of! If ever, you can go here:
+                <a href="https://www.w3.org/TR/css-flexbox-1/#flex-common"
+                target="_blank" rel="noopener noreferrer">W3School's 
+                Guide to Flexing!</a>
+            </div>
+
+            <div>
+                Or, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
+                target="_blank" rel="noopener noreferrer">MDN on Flex</a>
+            </div>
+        </p>
+
+        <p class="text-container">
+            <div>
+                Funny thing, by the way... since changing the axis 
+                also rotates the flex direction, your average "1 1 0"
+                will display nothing, because <b>empty divs have
+                0 height</b>. So, instead, <i>auto</i> on vertical 
+                finds the element height!
+            </div>
+
+            <div>
+                Something magical, the <a href="https://flexbox.malven.co/"
+                target="_blank" rel="noopener noreferrer">flexbox cheatsheet</a>!
+            </div>
+        </p>
+
+        <p>
+            <div>
+                Here's a useful container property, <i>gap</i>, which 
+                adds pixel space between items!
+            </div>
+        </p>
+
+        <p>
+            <div>
+                Some resources here:
+                <a href="https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"
+                    target="_blank" rel="noopener noreferrer">Interactive Guide to Flexbox</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox"
+                    target="_blank" rel="noopener noreferrer">MDN on Flexbox #2</a>
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                    target="_blank" rel="noopener noreferrer">CSS Tricks "Guide to Flexbox"</a>
+            </div>
+
+            <div>
+                Visit Odin's "Alignment" section for more resources!
+            </div>
+        </p>
+
+        <div class="flex-grow-container">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+
+    </body>
+</html>

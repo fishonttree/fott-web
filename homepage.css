@@ -1,0 +1,25 @@
+* {
+
+}
+
+body {
+    background-color: #35536a;
+}
+
+.title-container {
+    background-color: white;
+    padding: 10px 100px 30px 100px;
+
+}
+
+.random-container {
+    background-color: white;
+}
+
+.quote-container {
+    background-color: gray;
+}
+
+.signup-container {
+    background-color: blue;
+}

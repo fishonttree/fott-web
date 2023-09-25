@@ -1,3 +1,6 @@
 [submodule "pages/rps-game-web"]
 	path = pages/rps-game-web
 	url = git@github.com:fishonttree/rps-game.git
+[submodule "rps-game"]
+	path = rps-game
+	url = git@github.com:fishonttree/rps-game.git

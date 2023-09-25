@@ -1,0 +1,3 @@
+[submodule "rps-game"]
+	path = rps-game
+	url = git@github.com:fishonttree/rps-game.git

@@ -7,3 +7,6 @@
 [submodule "pages/rps-game"]
 	path = pages/rps-game
 	url = git@github.com:fishonttree/rps-game.git
+[submodule "pages/fott-web"]
+	path = pages/fott-web
+	url = git@github.com:fishonttree/fott-web.git
